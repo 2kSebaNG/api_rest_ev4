@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "YhDYs6tQGZo=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\cococ\\Desktop\\ApiRest_Ev4\\ApiRest_Ev4.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\cococ\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.3\\microsoft.aspnetcore.openapi.9.0.3.nupkg.sha512",
+    "C:\\Users\\cococ\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
