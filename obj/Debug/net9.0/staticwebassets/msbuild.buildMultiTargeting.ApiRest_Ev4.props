@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ApiRest_Ev4.props" />
+</Project>
