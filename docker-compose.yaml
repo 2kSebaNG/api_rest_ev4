@@ -1,0 +1,7 @@
+services:
+  api:
+    image: "seitaenyi/api_restful_deploy"
+    ports: 
+      - "3000:8080"
+    env_file:
+      - .env

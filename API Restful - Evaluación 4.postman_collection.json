@@ -1,0 +1,221 @@
+{
+	"info": {
+		"_postman_id": "8a05efc0-b2c7-40c2-bd3d-e17bef122b00",
+		"name": "API Restful - Evaluación 4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30508365"
+	},
+	"item": [
+		{
+			"name": "Get Product By Id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjE4NTkzOCIsImV4cCI6MTc1MjYxNzc1NH0.AK6qTOdJJ-u9Eg40sUD3brDyvWGvspaxYqTiItS-j6U",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{products_uri}}/a11d1c34-69d0-4897-84d8-ce7eeb720735",
+					"host": [
+						"{{products_uri}}"
+					],
+					"path": [
+						"a11d1c34-69d0-4897-84d8-ce7eeb720735"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjE4NTkzOCIsImV4cCI6MTc1MjYxNzc1NH0.AK6qTOdJJ-u9Eg40sUD3brDyvWGvspaxYqTiItS-j6U",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Galleton Junaeb\",\r\n    \"sku\": \"90552671\",\r\n    \"price\": 1,\r\n    \"stock\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{products_uri}}/",
+					"host": [
+						"{{products_uri}}"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Products",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjE4NTkzOCIsImV4cCI6MTc1MjYxNzc1NH0.AK6qTOdJJ-u9Eg40sUD3brDyvWGvspaxYqTiItS-j6U",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{products_uri}}/?Page=2&ProductLimit=10",
+					"host": [
+						"{{products_uri}}"
+					],
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "Page",
+							"value": "2"
+						},
+						{
+							"key": "ProductLimit",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjE4NTkzOCIsImV4cCI6MTc1MjYxNzc1NH0.AK6qTOdJJ-u9Eg40sUD3brDyvWGvspaxYqTiItS-j6U",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Galleton Junaeb\",\r\n    \"sku\": \"11002233\",\r\n    \"price\": 1000,\r\n    \"stock\": 1000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{products_uri}}/114881cf-bfeb-4e6a-aeaa-1eb0b1f3bb5a",
+					"host": [
+						"{{products_uri}}"
+					],
+					"path": [
+						"114881cf-bfeb-4e6a-aeaa-1eb0b1f3bb5a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete product",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjE4NTkzOCIsImV4cCI6MTc1MjYxNzc1NH0.AK6qTOdJJ-u9Eg40sUD3brDyvWGvspaxYqTiItS-j6U",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{products_uri}}/19905d10-d7ef-4c18-97c5-91281648aa9f",
+					"host": [
+						"{{products_uri}}"
+					],
+					"path": [
+						"19905d10-d7ef-4c18-97c5-91281648aa9f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Token",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{token_uri}}",
+					"host": [
+						"{{token_uri}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "products_uri",
+			"value": "localhost:5052/api/product",
+			"type": "string"
+		},
+		{
+			"key": "token_uri",
+			"value": "localhost:5052/api/token",
+			"type": "string"
+		}
+	]
+}
